@@ -13,7 +13,7 @@
     <title>Artificial Neural Network</title>
 
     <link rel="stylesheet" href="../../lib/reveal/css/reveal.css">
-    <link rel="stylesheet" href="../../lib/reveal/css/theme/black.css">
+    <link rel="stylesheet" href="../../lib/reveal/css/theme/solarized.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="../../lib/reveal/lib/css/zenburn.css">
@@ -41,7 +41,8 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>Artifical Neural Network?</h2>
+          <h2>Deep Learning</h2>
+          <br>
           <p>A recent breakthrough in AI</p>
           <br>
           <ul>
@@ -50,57 +51,46 @@
           </ul>
         </section>
         <section>
-          <h2>応用例 - JPLT検定</h2>
-          <br>
-          <p></p>
-          <table>
-            <tr>
-              <th colspan="2">このマニュアルの説明は<b><u>ややこしい</u></b>。</th>
-            </tr>
-            <tr>
-              <td>1. 明確だ</td>
-              <td>2. 容易だ</td>
-            </tr>
-            <tr>
-              <td style="color: red;">3. 複雑だ</td>
-              <td>4. 簡潔だ</td>
-            </tr>
-          </table>
-        </section>
-        <section>
-          <h2>手法</h2>
+          <h2>Deep Learning ?</h2>
           <br>
           <ul>
-            <li>教師あり学習</li>
-            <li>属性: <b><i>synset</i></b></li>
-            <li>トレーニングデータ: <span style="color: blue;">要調査</span></li>
-          </ul>
-          <p><span style="color: red;">*</span>synset: <a href="https://wordnet.princeton.edu/wordnet/" target="_blank">WordNet</a>のsynset</p>
-        </section>
-        <section>
-          <h2>WordNet</h2>
-          <br>
-          <ul>
-            <li>プリンストン大学によって開発された</li>
-            <li>英語の概念辞書</li>
-            <li>同義語のグループ</li>
-            <li>簡単な定義や、他の同義語のグループ</li>
-            <li>日本語あり</li>
-            <li>ベトナム語あり</li>
+            <li>A Neural Network</li>
+            <li>Supervised Learning</li>
+              <ul>
+                <li>Recurrent Neural Networks</li>
+                <li>Convolutional Neural Networks</li>
+              </ul>
+            <li>Unsupervised Learning</li>
+              <ul>
+                <li>Self Orgranizing Maps</li>
+                <li>Boltzmann Machines</li>
+                <li>Auto Encoders</li>
+              </ul>
           </ul>
         </section>
         <section>
-          <h2>SYNSET</h2>
+          <h2>Let's go</h2>
           <br>
           <ul>
-            <li>同義の単語あるいはコロケーションをグループにまとめている</li>
-            <li>動詞グループ</li>
-            <li>形容詞グループ</li>
-            <li>副詞グループ</li>
+            <li>Perceptron</li>
+            <li>A Neural Network</li>
+            <li>How do Neural Networks work?</li>
+            <li>How do Neural Networks learn?</li>
+            <li>Backpropagation</li>
           </ul>
         </section>
         <section>
-          <h1>ディスカッション</h1>
+          <section>
+            <h2>Perceptron</h2>
+            <p>A neural</p>
+            <img src="image/preceptron.png"/>
+          </section>
+          <section>
+            <p>Input:  $f() = \sum_{i=1}^m w_ix_i$</p>
+            <p>Activation Function: $\theta$</p>
+            <img src="image/preceptron-1.png"/>
+          </section>
+
         </section>
       </div>
     </div>
@@ -115,12 +105,12 @@
         history: true,
         center: true,
         transition: 'slide',
-
         dependencies: [
           { src: '../../lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: '../../lib/reveal/plugin/markdown/marked.js' },
           { src: '../../lib/reveal/plugin/markdown/markdown.js' },
           { src: '../../lib/reveal/plugin/notes/notes.js', async: true },
+          { src: '../../lib/reveal/plugin/math/math.js', async: true },
           { src: '../../lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
