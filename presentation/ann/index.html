@@ -18,6 +18,9 @@
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="../../lib/reveal/lib/css/zenburn.css">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+
     <!-- Printing and PDF exports -->
     <script>
       var link = document.createElement( 'link' );
@@ -144,20 +147,36 @@
 
         <section>
           <section>
-            <h2>How do ANN work?</h2>
+            <h2>Error Function</h2>
+            <p>$$E = \frac{1}{2}\sum_{i=1}^n(y_r - y_p)^2$$</p>
+            <ul>
+              <li>$y_r$ : real output</li>
+              <li>$y_p$ : predicted output</li>
+            </ul>
           </section>
           <section>
+            <h2>How to minimize Error Function</h2>
           </section>
         </section>
 
         <section>
-          <section>
-            <h2>How do ANN learn?</h2>
-          </section>
-          <section>
-          </section>
-        </section>
+          <h3>How to build own neural networks</h3>
+          <ol class="small-list">
+            <li>Randomly initialize the weights to small numbers close to 0 (not 0)</li>
+            <li>Input the first observation of your dataset in the input layer, each feature in one input node</li>
+            <li>Forward-Propagation: left -> right. Propagate the activations until getting the predicted result $y_p$</li>
+            <li>Compare the predicted result with actual result (Caculate Error Function)</li>
+            <li>Back-Propagation: right -> left. The error is back-propagated. Update the weights according to how much they are responsible for the error. The learning rate decides by how much we update the weights</li>
+            <li>
+              <ol>
+                <li>Repeat steps 1->5: Update the weights after each observation : Reinforcement Learning</li>
+                <li>Repeat steps 1->5: Update the weights only after a batch of observation : Batch Learning</li>
+              </ol>
+            </li>
+            <li>When the whole training set passed through the ANN that makes an epoch. Redo more epochs..</li>
+          </ol>
 
+        </section>
         <section>
           <h2>Coding Section</h2>
           <p>Requirements</p>
