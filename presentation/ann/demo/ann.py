@@ -10,7 +10,7 @@ from keras.layers import Dropout, Dense
 ### PART 1: Prepare Data
 # Importing the dataset 
 dataset = pd.read_csv("Churn_Modelling.csv")
-X = dataset.iloc[:, 3:13].values
+X = dataset.iloc[:, 3:13]
 y = dataset.iloc[:, 13].values
 
 # Encoding categorical data
@@ -57,4 +57,7 @@ classifier.fit(X_train, y_train, batch_size=10, epochs=10)
 ### PART 3: Making the predictions
 y_pred = classifier.predict(X_test)
 y_pred = (y_pred > 0.5)
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
 
