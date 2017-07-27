@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-capp-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Chatbot For E-Commerce - An Overview">
+    <meta name="author" content="Tran B. V. Son">
+
+    <title>Deep Learning FAQ</title>
+
+    <link rel="stylesheet" href="../../lib/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../../lib/reveal/css/theme/simple.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../../lib/reveal/lib/css/zenburn.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../../lib/reveal/css/print/pdf.css' : '../../lib/reveal/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <style media="screen">
+      table td {
+        border: none !important;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="../lib/reveal/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Deep Learning FAQ</h2>
+          <br>
+          <ul>
+            <li>Tran B. V. Son</li>
+            <li>about.me/tbvson</li>
+          </ul>
+        </section>
+
+        <section>
+          <ol style="font-size: 90%">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>Improve Deep Learning Performance</li>
+          </ol>
+        </section>
+        <section>
+          <h3><a href="http://machinelearningmastery.com/improve-deep-learning-performance/">Improve Deep Learning Performances</a></h3>
+          <ol>
+            <li>Improve Performance With Data</li>
+            <li>Improve Performance With Algorithms</li>
+            <li>Improve Performance With Algorithm Tuning</li>
+            <li>Improve Performance With Ensembles</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Improve Performance With Data</h3>
+          <p>You can get big wins with changes to your training data and problem definition. Perhaps even the biggest wins.</p>
+        </section>
+        <section>
+          <section>
+            <h4>1. Get More Data</h4>
+            <img id="dl-vs-ml" src="image/dl_vs_ml.png"/>
+          </section>
+          <section>
+            <h4>2. Invent More Data</h4>
+            <ul>
+              <li>If your data are vectors of numbers, create randomly modified versions of existing vectors.</li>
+              <li>If your data are images, create randomly modified versions of existing images.</li>
+              <li>If your data are text, you get the idea…</li>
+            </ul>
+            <strong>This is called data augmentation or data generation.</strong>
+          </section>
+
+          <section>
+            <h4>3. Rescale Your Data</h4>
+            <ul>
+              <li>Sigmoid Function: Rescale your data to values between 0-1</li>
+              <li>Tanh Function: Rescale to values between -1 and 1</li>
+              <li>....</li>
+            </ul>
+            <strong style="white-space: nowrap">Rescale your data to the bounds of your activation functions.</strong>
+
+          </section>
+
+          <section>
+            <h4>4. Transformr Your Data</h4>
+            <p>You must really get to know your data</p>
+            <ul style="font-size: 90%">
+              <li>Can you pre-process data with a projection method like PCA?</li>
+              <li>Can you aggregate multiple attributes into a single value?</li>
+              <li>Can you expose some interesting aspect of the problem with a new boolean flag?</li>
+              <li>Can you explore temporal or other structure in some other way?</li>
+              <li>....</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>5. Future Selection</h4>
+            <blockquote style="white-space: nowrap">
+              Neural nets are generally robust to unrelated data.
+            </blockquote>
+          </section>
+
+          <section>
+            <h4>6. Reframe Your Problem</h4>
+          </section>
+      </section>
+
+      <section>
+        <h3>Improve Performance With Algorithms</h3>
+      </section>
+
+      <section>
+        <section>
+          <p>1. Spot-Check Algorithms</p>
+        </section>
+        <section>
+          <p>2. Steal From Literature</p>
+        </section>
+        <section>
+          <p>3. Resampling Methods</p>
+        </section>
+      </section>
+
+      <section>
+        <h3>Improve Performance With Algorithm Tuning</h3>
+      </section>
+
+      <section>
+        <section>
+          <p>1. Diagnostics</p>
+        </section>
+        <section>
+          <p>2. Weight Initialization</p>
+        </section>
+        <section>
+          <p>3. Learning Rate</p>
+        </section>
+        <section>
+          <p>4. Activation Functions</p>
+        </section>
+        <section>
+          <p>5. Network Topology</p>
+        </section>
+        <section>
+          <p>6. Batches and Epochs</p>
+        </section>
+        <section>
+          <p>7. Regularization</p>
+        </section>
+        <section>
+          <p>8. Optimization and Loss</p>
+        </section>
+        <section>
+          <p>9. Early Stopping</p>
+        </section>
+      </section>
+
+      <section>
+        <h3>Improve Performance With Ensembles</h3>
+      </section>
+
+      <section>
+        <section>
+          <p>1. Combine Models</p>
+        </section>
+
+        <section>
+          <p>2. Combine Views</p>
+        </section>
+
+        <section>
+          <p>3. Stacking</p>
+        </section>
+      </section>
+
+      <section>
+        <h3>Handle the Overwhelm</h3>
+        <ol>
+          <li>Pick one Group
+            <ol>
+              <li>Data</li>
+              <li>Algorithms</li>
+              <li>Tuning</li>
+              <li>Ensembles</li>
+            </ol>
+          </li>
+          <li>Pick one method from the group</li>
+          <li>Pick one thing to try of the chosen method</li>
+          <li>Compare the results, keep if there was an improvement</li>
+          <li>Repeat</li>
+        </ol>
+      </section>
+
+    </div>
+
+    <script src="../../lib/reveal/lib/js/head.min.js"></script>
+    <script src="../../lib/reveal/js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide',
+        dependencies: [
+          { src: '../../lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../lib/reveal/plugin/markdown/marked.js' },
+          { src: '../../lib/reveal/plugin/markdown/markdown.js' },
+          { src: '../../lib/reveal/plugin/notes/notes.js', async: true },
+          { src: '../../lib/reveal/plugin/math/math.js', async: true },
+          { src: '../../lib/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
