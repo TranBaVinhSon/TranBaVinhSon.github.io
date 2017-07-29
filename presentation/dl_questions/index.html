@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-capp-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="description" content="Chatbot For E-Commerce - An Overview">
+    <meta name="description" content="Deep Learning FAQ">
     <meta name="author" content="Tran B. V. Son">
 
     <title>Deep Learning FAQ</title>
@@ -62,7 +62,33 @@
           </ol>
         </section>
         <section>
-          <h3><a href="http://machinelearningmastery.com/improve-deep-learning-performance/">Improve Deep Learning Performances</a></h3>
+          <section>
+            <h3 style="white-space: nowrap"><a href="https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw" target="_blank">4. How Many Hidden Layers and neurals</a></h3>
+            <p>The optimal size of the hidden layer is usually between the size of the input and size of the output layers</p>
+            <ol>
+              <li>Number of hidden layers equals one (More hidden layers are extremely hard to train)</li>
+              <li>The number of neurons in that layer is the mean of the neurons in the input and output layers</li>
+            </ol>
+          </section>
+          <section>
+            <h2><strong>Such rules are total garbage.</strong></h2>
+          </section>
+          <section>
+            <p><i>"Very simple. Just keep adding layers until the test error does not improve anymore."</i> - Yoshua Bengio</p>
+          </section>
+          <section>
+            <h4>Some additional Links</h4>
+            <ul>
+              <li><a href="https://www.researchgate.net/post/How_to_decide_the_number_of_hidden_layers_and_nodes_in_a_hidden_layer" target="_blank">How to decide the number of hidden layers?</a></li>
+              <li><a href="https://stackoverflow.com/questions/35520587/how-to-determine-the-number-of-layers-and-nodes-of-a-neural-network" target="_blank">How to determine the number of hidden layers?</a></li>
+            </ul>
+          </section>
+
+
+
+        </section>
+        <section>
+          <h3><a href="http://machinelearningmastery.com/improve-deep-learning-performance/" target="_blank">5. Improve Deep Learning Performances</a></h3>
           <ol>
             <li>Improve Performance With Data</li>
             <li>Improve Performance With Algorithms</li>
@@ -132,9 +158,15 @@
       <section>
         <section>
           <p>1. Spot-Check Algorithms</p>
+          <br>
+          <blockquote>
+            <p>What evidence have you collected that your chosen method was a good choice?</p>
+          </blockquote>
         </section>
         <section>
           <p>2. Steal From Literature</p>
+          <p>A great shortcut to picking a good method, is to steal ideas from literature.
+          Who else has worked on a problem like yours and what methods did they use.</p>
         </section>
         <section>
           <p>3. Resampling Methods</p>
@@ -143,6 +175,9 @@
 
       <section>
         <h2>Improve Performance With Algorithm Tuning</h2>
+        <blockquote>
+          <p>You may need to train a given “configuration” of your network many times (3-10 or more) to get a good estimate of the performance of the configuration. </p>
+        </blockquote>
       </section>
 
       <section>
@@ -209,6 +244,13 @@
           <li>Compare the results, keep if there was an improvement</li>
           <li>Repeat</li>
         </ol>
+      </section>
+      <section>
+        <h4>Some ANN FAQ sites</h4>
+        <ul>
+          <li><a href="https://www.cs.cmu.edu/Groups/AI/util/html/faqs/ai/neural/faq.html" target="_blank">CMU Neural FAQ</a></li>
+          <li><a href="ftp://ftp.sas.com/pub/neural/FAQ.html" target="_blank">FTP Neural FAQ</a></li>
+        </ul>
       </section>
 
     </div>
