@@ -30,7 +30,21 @@ footer ul li {
 
 a {
   color: #ecf0f1 !important;
-  text-decoration: none;
+  text-decoration: none !important;
+  font-size: 110%;
+  /* font-weight: bold; */
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  footer{
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+    color: white !important;
+  }
 }
 
 /*Text Animation*/
