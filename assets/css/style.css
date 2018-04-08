@@ -1,14 +1,20 @@
-#particles-js {
-  position: absolute;
+html, body{
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  /* background-color: #272727; */
-  background-color: #fffff;
-  z-index: -3;
-  /*opacity: 0.9;*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container{
+  min-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,.9);
+}
+
+canvas {
+  width: 100vw;
 }
 
 .main {
@@ -37,7 +43,7 @@ footer ul li {
 }
 
 a {
-  color: #272727 !important;
+  color: white !important;
   text-decoration: none !important;
   font-size: 110%;
   /* font-weight: bold; */
@@ -57,10 +63,10 @@ a {
   .main {
     width: 100% !important;
   }
-  .fakeMenu {
+  .menu {
     width: 100% !important;
   }
-  .fakeScreen {
+  .screen {
     padding: 5px 10px !important;
     width: 100% !important;
   }
@@ -70,7 +76,7 @@ a {
   }
 }
 
-.fakeMenu {
+.menu {
   width: 450px;
   display: flex;
   align-items: center;
@@ -81,9 +87,9 @@ a {
   border-top-left-radius: 5px;
 }
 
-.fakeButtons {
-  height: 10px;
-  width: 10px;
+.buttons {
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   border: 1px solid #000;
   position: relative;
@@ -91,27 +97,28 @@ a {
   background-color: #ff3b47;
   border-color: #9d252b;
   display: inline-block;
+  cursor: pointer;
 }
 
-.fakeMinimize {
+.minimize {
   left: 11px;
   background-color: #ffc100;
   border-color: #9d802c;
 }
 
-.fakeZoom {
+.maximize {
   left: 16px;
   background-color: #00d742;
   border-color: #049931;
 }
 
 
-.fakeScreen {
+.screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #151515;
+  background-color: rgba(0,0,0,.75);
   box-sizing: border-box;
   width: 450px;
   padding: 10px 20px;
