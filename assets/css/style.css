@@ -59,6 +59,9 @@ a {
     bottom: 8px;
     color: white !important;
   }
+  footer ul li {
+    margin-left: 5px;
+  }
 
   .main {
     width: 100% !important;
