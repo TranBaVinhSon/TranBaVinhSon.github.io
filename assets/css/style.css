@@ -115,6 +115,9 @@ a {
   border-color: #049931;
 }
 
+.dummy-text {
+  color: green;
+}
 
 .screen {
   display: flex;
